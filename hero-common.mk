@@ -193,3 +193,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     cm_charger_res_images
+
+# System properties
+include $(LOCAL_PATH)/system_prop.mk
