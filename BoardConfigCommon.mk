@@ -164,6 +164,12 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_SCREEN_HEIGHT := 2048
 TARGET_SCREEN_WIDTH := 1536
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_sec
+
+# Properties
+TARGET_SYSTEM_PROP := device/samsung/hero-common/system.prop
+
 # Release tools
 TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
 
