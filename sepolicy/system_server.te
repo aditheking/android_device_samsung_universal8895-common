@@ -19,6 +19,7 @@ allow system_server efs_file:file r_file_perms;
 
 # /efs/FactoryApp
 allow system_server app_efs_file:dir r_dir_perms;
+allow system_server app_efs_file:file r_file_perms;
 
 # WifiMachine
 allow system_server self:capability { sys_module };
