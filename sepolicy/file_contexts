@@ -56,6 +56,7 @@
 /efs/FactoryApp/factorymode  u:object_r:factorymode_factoryapp_efs_file:s0
 /efs/FactoryApp/fdata        u:object_r:radio_factoryapp_efs_file:s0
 /efs/FactoryApp/hist_nv      u:object_r:radio_factoryapp_efs_file:s0
+/efs/FactoryApp/prox_cal     u:object_r:sensor_factoryapp_efs_file:s0
 /efs/FactoryApp/test_nv      u:object_r:radio_factoryapp_efs_file:s0
 
 /efs/Battery(/.*)?           u:object_r:battery_efs_file:s0

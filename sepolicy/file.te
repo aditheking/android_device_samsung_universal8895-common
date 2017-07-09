@@ -11,6 +11,7 @@ type imei_efs_file, file_type;
 type prov_efs_file, file_type;
 type radio_factoryapp_efs_file, file_type;
 type sensor_efs_file, file_type;
+type sensor_factoryapp_efs_file, file_type;
 type wifi_efs_file, file_type;
 
 ### sysfs types
