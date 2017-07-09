@@ -90,6 +90,7 @@
 
 # fingerprint biometrics
 /data/biometrics/meta/calib\.dat  u:object_r:fingerprintd_data_file:s0
+/data/biometrics/typetype_check\.dat  u:object_r:fingerprintd_data_file:s0
 
 ####################################
 # sysfs files
