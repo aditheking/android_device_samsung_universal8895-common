@@ -11,5 +11,6 @@ allow kernel device:chr_file { create setattr getattr unlink };
 allow kernel sysfs_devices_system_cpu:file { setattr };
 allow kernel sysfs:file { setattr };
 
-# /efs/Battery/battery_data.dat
+# /efs contents
 allow kernel battery_efs_file:file r_file_perms;
+allow kernel sensor_efs_file:file r_file_perms;
