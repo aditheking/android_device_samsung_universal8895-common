@@ -47,6 +47,8 @@
 
 /dev/vfsspi                  u:object_r:fingerprint_device:s0
 
+/dev/batch_io                u:object_r:sensor_device:s0
+
 ####################################
 # efs files
 /efs/FactoryApp(/.*)?        u:object_r:app_efs_file:s0
