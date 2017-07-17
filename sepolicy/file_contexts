@@ -65,7 +65,6 @@
 /efs/gyro_cal_data           u:object_r:sensor_efs_file:s0
 /efs/h2k\.dat                u:object_r:cpk_efs_file:s0
 /efs/imei(/.*)?              u:object_r:imei_efs_file:s0
-/efs/maxim/(/.*)?            u:object_r:sensor_efs_file:s0
 /efs/nv_data.bin(.*)         u:object_r:bin_nv_data_efs_file:s0
 /efs/prov(/.*)?              u:object_r:prov_efs_file:s0
 /efs/prov_data(/.*)?         u:object_r:prov_efs_file:s0
