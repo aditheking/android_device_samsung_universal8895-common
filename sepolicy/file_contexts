@@ -88,9 +88,7 @@
 # mobicore
 /data/misc/mcRegistry(/.*)?  u:object_r:tee_data_file:s0
 
-# fingerprint biometrics
-/data/biometrics/meta/calib\.dat  u:object_r:fingerprintd_data_file:s0
-/data/biometrics/typetype_check\.dat  u:object_r:fingerprintd_data_file:s0
+/data/biometrics(/.*)?       u:object_r:fingerprintd_data_file:s0
 
 # camera
 /data/camera/ISP_CV          u:object_r:camera_data_file:s0
