@@ -2,4 +2,4 @@
 import /efs/factory.prop
 
 # boot device
-ro.boot.bootdevice=155a0000.ufs
+ro.boot.bootdevice=11120000.ufs

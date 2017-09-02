@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/hero-common
+LOCAL_PATH := device/samsung/universal8895-common
 
 # Common Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.samsungexynos8890 \
+    fstab.samsungexynos8895 \
     init.baseband.rc \
     init.bluetooth.rc \
     init.gps.rc \
@@ -33,10 +33,10 @@ PRODUCT_PACKAGES += \
     init.rilchip.rc \
     init.rilcommon.rc \
     init.samsung.rc \
-    init.samsungexynos8890.rc \
-    init.samsungexynos8890.usb.rc \
+    init.samsungexynos8895.rc \
+    init.samsungexynos8895.usb.rc \
     init.wifi.rc \
-    ueventd.samsungexynos8890.rc
+    ueventd.samsungexynos8895.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -148,7 +148,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
-    audio.primary.universal8890 \
+    audio.primary.universal8895 \
     libtinycompress
 
 # Media
@@ -173,17 +173,15 @@ PRODUCT_COPY_FILES += \
 # Touchscreen
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/ft5x06_ts.idc:system/usr/idc/ft5x06_ts.idc \
-    $(LOCAL_PATH)/configs/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc \
-    $(LOCAL_PATH)/configs/idc/Synaptics_RMI4_TouchPad_Sensor.idc:system/usr/idc/Synaptics_RMI4_TouchPad_Sensor.idc \
     $(LOCAL_PATH)/configs/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc
 
 # Power
 PRODUCT_PACKAGES += \
-    power.universal8890
+    power.universal8895
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.universal8890
+    lights.universal8895
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -200,7 +198,7 @@ include $(LOCAL_PATH)/system_prop.mk
 
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
-$(call inherit-product, hardware/samsung_slsi-cm/exynos8890/exynos8890.mk)
+$(call inherit-product, hardware/samsung_slsi-cm/exynos8895/exynos8895.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/hero-common/hero-common-vendor.mk)
+$(call inherit-product, vendor/samsung/universal8895-common/universal8895-common-vendor.mk)

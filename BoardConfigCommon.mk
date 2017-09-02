@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/hero-common
+LOCAL_PATH := device/samsung/universal8895-common
 
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
@@ -26,8 +26,8 @@ TARGET_NO_RADIOIMAGE := true
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_SLSI_VARIANT := cm
-TARGET_SOC := exynos8890
-TARGET_BOOTLOADER_BOARD_NAME := universal8890
+TARGET_SOC := exynos8895
+TARGET_BOOTLOADER_BOARD_NAME := universal8895
 
 # CPU
 TARGET_ARCH := arm64
@@ -55,6 +55,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
+BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 
 # Kernel
 TARGET_KERNEL_ARCH := arm64
@@ -63,11 +64,11 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 # Partitions
-BOARD_BOOTIMAGE_PARTITION_SIZE     := 41943040
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 48234496
-BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 4508876800
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 27044851712
-BOARD_CACHEIMAGE_PARTITION_SIZE    := 209715200
+BOARD_BOOTIMAGE_PARTITION_SIZE     :=  41943040 #(40960 sda7)
+BOARD_RECOVERYIMAGE_PARTITION_SIZE :=  48234496 #(47104 sda8)
+BOARD_SYSTEMIMAGE_PARTITION_SIZE   :=  4561305600 #(4454400 sda17)
+BOARD_USERDATAIMAGE_PARTITION_SIZE :=  58556678144 #(57184256 sda24)
+BOARD_CACHEIMAGE_PARTITION_SIZE    :=  524288000 #(512000 sda18)
 
 # blockdev --getbsz /dev/block/mmcblk0p9
 BOARD_FLASH_BLOCK_SIZE := 4096
@@ -91,7 +92,7 @@ TARGET_POWERHAL_VARIANT := samsung
 TARGET_SEC_FP_HAL_VARIANT := bauth
 
 # Samsung Hardware
-BOARD_HARDWARE_CLASS += device/samsung/hero-common/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/universal8895-common/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
 # Samsung Camera
@@ -169,7 +170,7 @@ TARGET_SCREEN_WIDTH := 1536
 TARGET_INIT_VENDOR_LIB := libinit_sec
 
 # Properties
-TARGET_SYSTEM_PROP := device/samsung/hero-common/system.prop
+TARGET_SYSTEM_PROP := device/samsung/universal8895-common/system.prop
 
 # Release tools
 TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
@@ -177,7 +178,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
 # Recovery
 #RECOVERY_VARIANT := twrp
 BOARD_HAS_DOWNLOAD_MODE := true
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.samsungexynos8890
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.samsungexynos8895
 
 # TWRP
 ifeq ($(RECOVERY_VARIANT),twrp)
