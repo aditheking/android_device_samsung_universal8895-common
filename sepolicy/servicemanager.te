@@ -1,0 +1,4 @@
+allow servicemanager sensorhubservice:binder { call transfer };
+allow servicemanager sensorhubservice:process { getattr };
+allow servicemanager sensorhubservice:file r_file_perms;
+allow servicemanager sensorhubservice:dir r_dir_perms;

@@ -1,5 +1,3 @@
-# /dev/seiren
-allow mediacodec seiren_device:chr_file { ioctl rw_file_perms };
 # /dev/s5p-smem
 
 allow mediacodec secmem_device:chr_file { ioctl rw_file_perms };
