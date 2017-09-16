@@ -13,25 +13,50 @@
 #
 
 # Audio
-lib/libaudio-ril.so
+lib/hw/audio.primary.universal8895.so
 lib/libaudioroute.so
 lib/libaudioutils.so
+lib64/libaudioutils.so
 lib/librecordalive.so
 lib/libsamsungDiamondVoiceExtV4.so
 lib/libSamsungPostProcessConvertor.so
 lib/lib_SamsungRec_06003.so
 lib/libsecaudioinfo.so
-lib/libsecril-client.so
+lib64/libsecaudioinfo.so
 lib/lib_soundaliveresampler.so
 lib/lib_SoundAlive_SRC384_ver300.so
 lib/libspeexresampler.so
+lib64/libspeexresampler.so
 lib/libtinyalsa.so
+lib64/libtinyalsa.so
 lib/libtinycompress.so
 etc/firmware/cs47l92-dsp1-dsd-176.4kHz.wmfw
 etc/firmware/cs47l92-dsp1-dsd-352.8kHz.wmfw
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/APBargeIn_AUDIO_SLSI.bin
 vendor/firmware/APBiBF_AUDIO_SLSI.bin
+vendor/etc/audio_effects.conf
+vendor/etc/audio_policy.conf
+
+lib/soundfx/libeffectproxy.so
+lib/soundfx/libaudioeffectoffload.so
+lib/soundfx/libbundlewrapper.so
+lib/soundfx/libreverbwrapper.so
+lib/soundfx/libvisualizer.so
+lib/soundfx/libdownmix.so
+lib/libmysound.so
+lib/soundfx/libmyspace.so
+lib/libaudiosa.so
+lib/soundfx/libaudiosaplus_sec.so
+lib/soundfx/libldnhncr.so
+lib/libsamsungSoundbooster_plus.so
+lib/soundfx/libaudiopreprocessing.so
+lib/lib_SoundAlive_3DPosition_ver202.so
+lib/lib_SA_GoogleFX_ver124b.so
+lib/lib_SoundAlive_AlbumArt_ver105.so
+lib/lib_SoundAlive_play_plus_ver200.so
+lib/lib_SoundBooster_ver800.so
+lib/libHMT.so
 
 # Bluetooth
 vendor/firmware/bcm4361A0_V0128.0000.hcd
@@ -41,20 +66,31 @@ vendor/firmware/bcm4361B0_V0235.0246_semco_e31.hcd
 vendor/firmware/bcm4361B0_V0235.0247_semco.hcd
 
 # Camera
-lib/hw/camera.universal8895.so
-lib64/hw/camera.universal8895.so
-lib/libexynoscamera3.so
-lib64/libexynoscamera3.so
-lib/libexynoscamera.so
-lib64/libexynoscamera.so
-lib/libexynosv4l2.so
-lib64/libexynosv4l2.so
-lib/libuniapi.so
-lib64/libuniapi.so
-lib/libuniplugin.so
-lib64/libuniplugin.so
-lib/libhwjpeg.so
-lib64/libhwjpeg.so
+#~ lib/hw/camera.universal8895.so
+#~ lib64/hw/camera.universal8895.so
+#~ lib/libexynoscamera3.so
+#~ lib64/libexynoscamera3.so
+#~ lib/libexynoscamera.so
+#~ lib64/libexynoscamera.so
+#~ lib/libexynosv4l2.so
+#~ lib64/libexynosv4l2.so
+#~ lib/libuniapi.so
+#~ lib64/libuniapi.so
+#~ lib/libuniplugin.so
+#~ lib64/libuniplugin.so
+#~ lib/libhwjpeg.so
+#~ lib64/libhwjpeg.so
+
+#lib/libexynosgscaler.so
+#lib64/libexynosgscaler.so
+#lib/libexynosscaler.so
+#lib64/libexynosscaler.so
+#lib/libexynosutils.so
+#lib64/libexynosutils.so
+#lib/libcamera_client.so
+#lib64/libcamera_client.so
+#lib/libcamera_metadata.so
+#lib64/libcamera_metadata.so
 
 # DRM
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
@@ -66,6 +102,28 @@ lib64/libbauthserver.so
 lib64/libbauthtzcommon.so
 lib64/libegis_fp_normal_sensor_test.so
 lib64/libsynaFpSensorTestNwd.so
+bin/tlc_server
+lib64/libtlc_tz_iccc.so
+lib64/libtlc_tz_ccm_inapptwo.so
+lib64/libtlc_tz_keystore.so
+lib64/libtlc_spay.so
+lib64/libtlc_tz_dcm.so
+lib64/libtlc_direct_comm.so
+lib64/libtlc_tima_atn.so
+lib64/libtlc_tz_esecomm.so
+lib64/libtlc_tima_pkm.so
+lib/libtlc_tz_iccc.so
+lib/libtlc_tz_keystore.so
+lib/libtlc_spay.so
+lib/libbauthtzcommon.so
+lib/libtlc_tz_dcm.so
+lib/libtlc_direct_comm.so
+lib/libtlc_tima_atn.so
+lib/libtlc_tz_esecomm.so
+lib/liboemcrypto.so
+lib/libtlc_tima_pkm.so
+vendor/lib64/libtlc_comm.so
+vendor/lib/libtlc_comm.so
 
 # GPS
 bin/gps.cer
@@ -202,30 +260,47 @@ lib/omx/libOMX.Exynos.WMV.Decoder.so
 # Radio
 bin/cbd
 bin/rild
+lib/libaudio-ril.so
 lib/libreference-ril.so
 lib/libril.so
+lib/librilutils.so
 lib/libsec-ril.so
 lib/libsec-ril-dsds.so
 lib/libsecnativefeature.so
+lib/libsecril-client.so
+lib/libxml2.so
+lib/libprotobuf-cpp-full.so
 lib64/libreference-ril.so
 lib64/libril.so
+lib64/librilutils.so
 lib64/libsec-ril.so
 lib64/libsec-ril-dsds.so
 lib64/libsecnativefeature.so
+lib64/libsecril-client.so
+lib64/libxml2.so
+lib64/libprotobuf-cpp-full.so
+
+
 
 # Sensors
-lib64/libhr.so
+bin/sensorhubservice
 bin/bcm_sensorhub_a1.patch
 lib/hw/sensorhubs.universal8895.so
 lib/hw/sensors.universal8895.so
 lib/libsensorlistener.so
 lib/libsensorservice.so
+lib/sensors.bio.so
+lib/sensors.sensorhub.so
+lib/libsensorhub.so
+lib64/libsensorhub.so
+lib64/libhr.so
 lib64/hw/sensorhubs.universal8895.so
 lib64/hw/sensors.universal8895.so
-#lib64/libagc_max.so
-#lib64/libmaxflicker.so
 lib64/libsensorlistener.so
+lib64/libsensorhubservice.so
 lib64/libsensorservice.so
+lib64/sensors.bio.so
+lib64/sensors.sensorhub.so
 
 # Surface Composer
 lib/libion.so
@@ -277,3 +352,48 @@ etc/wifi/nvram_net.txt_r02a_a1
 etc/wifi/nvram_net.txt_r02c_a1
 etc/wifi/nvram_net.txt_r02g_b0
 etc/wifi/nvram_net.txt_r02j_b0
+
+#audiotest
+#~ lib/hw/audio.a2dp.default.so
+#~ lib/hw/audio.playback_record.default.so
+#~ lib/hw/audio.primary.default.so
+#~ lib/hw/audio.primary.goldfish.so
+#~ lib/hw/audio.primary.universal8895.so
+#~ lib/hw/audio.r_submix.default.so
+#~ lib/hw/audio.tms.default.so
+#~ lib/hw/audio.usb.default.so
+lib/hw/audio_policy.default.so
+lib/libapa.so
+lib/libapa_control.so
+lib/libaudiopolicyenginedefault.so
+lib/libaudiopolicymanager.so
+lib/libaudiopolicymanagerdefault.so
+lib/libaudiopolicyservice.so
+lib/libedmnativehelper.so
+#~ lib/libfloatingfeature.so
+lib/libhiddensound.so
+lib/libjackshm.so
+lib/libjansson.so
+#~ lib/libmediautils.so
+lib/libsetproperty.so
+#~ lib/libspeexresampler.so
+#~ lib64/hw/audio.primary.default.so
+#~ lib64/hw/audio.primary.goldfish.so
+#~ lib64/hw/audio.r_submix.default.so
+#~ lib64/hw/audio.tms.default.so
+#~ lib64/hw/audio.usb.default.so
+lib64/hw/audio_policy.default.so
+#~ lib64/libaudiopolicyenginedefault.so
+#~ lib64/libaudiopolicymanager.so
+#~ lib64/libaudiopolicymanagerdefault.so
+#~ lib64/libedmnativehelper.so
+#~ lib64/libfloatingfeature.so
+lib64/libhiddensound.so
+lib64/libjackshm.so
+lib64/libjansson.so
+#~ lib64/libmediautils.so
+lib64/libsetproperty.so
+#~ lib64/libspeexresampler.so
+vendor/lib/libjack.so
+vendor/lib64/libjack.so
+
