@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.samsungexynos8895.rc \
     init.samsungexynos8895.usb.rc \
+    init.usb.configfs.rc \
     init.wifi.rc \
     ueventd.samsungexynos8895.rc
 
@@ -141,8 +142,14 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_effects_sec.conf:system/etc/audio_effects_sec.conf \
     $(LOCAL_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/configs/audio/mixer_paths_0.xml:system/etc/mixer_paths_0.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_gains.xml:system/etc/mixer_gains.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_gains_r00.xml:system/etc/mixer_gains_r00.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_r00.xml:system/etc/mixer_paths_r00.xml \
+    $(LOCAL_PATH)/configs/audio/mixer_paths_r01.xml:system/etc/mixer_paths_r01.xm \
+    $(LOCAL_PATH)/configs/audio/stage_policy.conf:system/etc/stage_policy.conf \
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -169,6 +176,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/ft5x06_ts.idc:system/usr/idc/ft5x06_ts.idc \
     $(LOCAL_PATH)/configs/idc/sec_touchscreen.idc:system/usr/idc/sec_touchscreen.idc
+
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/samsung.kl:system/usr/keylayout/samsung.kl \
 
 # Power
 PRODUCT_PACKAGES += \
