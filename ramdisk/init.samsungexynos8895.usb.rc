@@ -1,5 +1,5 @@
 on init
-    mount configfs none /sys/kernel/config
+    mount configfs system /sys/kernel/config
     mkdir /sys/kernel/config/usb_gadget/g1
     mkdir /sys/kernel/config/usb_gadget/g1/strings/0x409
     mkdir /sys/kernel/config/usb_gadget/g1/configs/c.1

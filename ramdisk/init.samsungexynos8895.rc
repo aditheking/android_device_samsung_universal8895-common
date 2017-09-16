@@ -454,6 +454,22 @@ on boot
     chown system radio /sys/class/host_notify/usb_otg/booster
     chmod 0660 /sys/class/host_notify/usb_otg/booster
 
+# DRK permission
+    mkdir /efs/prov 0770 radio system
+    chown radio system /efs/prov_data
+    chmod 0770 /efs/prov_data
+    chown radio system /efs/prov_data/dev_root
+    chmod 0770 /efs/prov_data/dev_root
+    chown radio system /efs/prov_data/knox
+    chmod 0770 /efs/prov_data/knox
+    chown radio system /efs/prov_data/dev_root/dev_root.dat
+    chmod 0640 /efs/prov_data/dev_root/dev_root.dat
+    chown radio system /efs/prov/libdevkm.lock
+    chmod 0660 /efs/prov/libdevkm.lock
+    write /efs/prov/ffffffff00000000000000000000000c.tlbin 0
+    chown radio system /efs/prov/ffffffff00000000000000000000000c.tlbin
+    chmod 0660 /efs/prov/ffffffff00000000000000000000000c.tlbin
+
 # sem_daemon permission
     chown system system /efs/sec_efs/ssp_data
     chmod 0644 /efs/sec_efs/ssp_data
@@ -975,21 +991,6 @@ service visiond /system/bin/visiond
     class main
     user system
     group system camera media media_rw
-
-# SSWAP
-service swapon /sbin/sswap -s -f 2048
-    class core
-    user root
-    group root
-    seclabel u:r:sswap:s0
-    oneshot
-
-# ApexServer
-service apexserver /system/bin/apexserver
-	class main
-	user system
-	group system graphics drmrpc media media_rw m2mscaler
-	disabled
 
 service cameraserver /system/bin/cameraserver
     class main

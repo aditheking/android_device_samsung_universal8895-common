@@ -50,7 +50,7 @@
 
 # mscalers
 /dev/video50              0660   media      graphics
-/dev/m2m1shot_scaler0     0660   cameraserver      m2mscaler
+/dev/m2m1shot_scaler0     0660   cameraserver      graphics
 
 /dev/video55              0666   system     graphics
 /dev/fimg2d               0666   system     graphics
