@@ -44,11 +44,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bq.gpu_to_cpu_unsupported=1 \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=560 \
-    debug.hwc.force_gpu=1
+    debug.hwc.force_gpu=1 \
+    ro.hardware.egl=mali
 
 # Hwc - not used on cm/aosp
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwc.winupdate=1
+    debug.hwc.winupdate=1 \
+    debug.slsi_platform=1
 
 # Hwui
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -93,3 +95,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# Usb (temp)
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb
