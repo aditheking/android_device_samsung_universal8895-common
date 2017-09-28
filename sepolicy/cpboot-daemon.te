@@ -44,7 +44,10 @@ allow cpboot-daemon sysfs:file r_file_perms;
 # /proc/cmdline
 allow cpboot-daemon proc:file r_file_perms;
 
+allow cpboot-daemon radio_block_device:blk_file { read open };
+
 # set properties on boot
 set_prop(cpboot-daemon, cpboot-daemon_prop)
 set_prop(cpboot-daemon, radio_prop)
 set_prop(cpboot-daemon, system_prop)
+set_prop(cpboot-daemon, modemloader_prop)

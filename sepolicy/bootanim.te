@@ -1,1 +1,0 @@
-allow bootanim fimg2d_video_device:chr_file rw_file_perms;

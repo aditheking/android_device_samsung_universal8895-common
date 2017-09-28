@@ -27,3 +27,12 @@ type sensor_device, dev_type;
 
 # efs
 type efs_block_device, dev_type;
+
+# radio
+type radio_block_device, dev_type;
+
+# data/user
+type data_user_file, file_type;
+
+# /dev/max_hrm
+type hrm_device, dev_type;
