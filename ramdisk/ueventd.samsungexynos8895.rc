@@ -122,13 +122,6 @@
 # audio
 /dev/seiren               0660   system     audio
 
-# MobiCore
-#/dev/mobicore             0600   drmrpc     drmrpc
-#/dev/mobicore-user        0660   drm        drmrpc
-
-# Secure MEM driver
-#/dev/s5p-smem             0660   drm        drmrpc
-
 #temporary
 /data/modem.bin           0400   radio      system
 
