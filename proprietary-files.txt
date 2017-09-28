@@ -66,20 +66,20 @@ vendor/firmware/bcm4361B0_V0235.0246_semco_e31.hcd
 vendor/firmware/bcm4361B0_V0235.0247_semco.hcd
 
 # Camera
-#~ lib/hw/camera.universal8895.so
-#~ lib64/hw/camera.universal8895.so
-#~ lib/libexynoscamera3.so
-#~ lib64/libexynoscamera3.so
-#~ lib/libexynoscamera.so
-#~ lib64/libexynoscamera.so
-#~ lib/libexynosv4l2.so
-#~ lib64/libexynosv4l2.so
-#~ lib/libuniapi.so
-#~ lib64/libuniapi.so
-#~ lib/libuniplugin.so
-#~ lib64/libuniplugin.so
-#~ lib/libhwjpeg.so
-#~ lib64/libhwjpeg.so
+#lib/hw/camera.universal8895.so
+#lib64/hw/camera.universal8895.so
+#lib/libexynoscamera3.so
+#lib64/libexynoscamera3.so
+#lib/libexynoscamera.so
+#lib64/libexynoscamera.so
+#lib/libexynosv4l2.so
+#lib64/libexynosv4l2.so
+#lib/libuniapi.so
+#lib64/libuniapi.so
+#lib/libuniplugin.so
+#lib64/libuniplugin.so
+#lib/libhwjpeg.so
+#lib64/libhwjpeg.so
 
 #lib/libexynosgscaler.so
 #lib64/libexynosgscaler.so
@@ -283,6 +283,7 @@ lib64/libprotobuf-cpp-full.so
 
 
 # Sensors
+etc/sensors/hals.conf
 bin/sensorhubservice
 bin/bcm_sensorhub_a1.patch
 lib/hw/sensorhubs.universal8895.so
@@ -354,14 +355,14 @@ etc/wifi/nvram_net.txt_r02g_b0
 etc/wifi/nvram_net.txt_r02j_b0
 
 #audiotest
-#~ lib/hw/audio.a2dp.default.so
-#~ lib/hw/audio.playback_record.default.so
-#~ lib/hw/audio.primary.default.so
-#~ lib/hw/audio.primary.goldfish.so
-#~ lib/hw/audio.primary.universal8895.so
-#~ lib/hw/audio.r_submix.default.so
-#~ lib/hw/audio.tms.default.so
-#~ lib/hw/audio.usb.default.so
+lib/hw/audio.a2dp.default.so
+lib/hw/audio.playback_record.default.so
+lib/hw/audio.primary.default.so
+lib/hw/audio.primary.goldfish.so
+lib/hw/audio.primary.universal8895.so
+lib/hw/audio.r_submix.default.so
+lib/hw/audio.tms.default.so
+lib/hw/audio.usb.default.so
 lib/hw/audio_policy.default.so
 lib/libapa.so
 lib/libapa_control.so
@@ -370,30 +371,30 @@ lib/libaudiopolicymanager.so
 lib/libaudiopolicymanagerdefault.so
 lib/libaudiopolicyservice.so
 lib/libedmnativehelper.so
-#~ lib/libfloatingfeature.so
+lib/libfloatingfeature.so
 lib/libhiddensound.so
 lib/libjackshm.so
 lib/libjansson.so
-#~ lib/libmediautils.so
+lib/libmediautils.so
 lib/libsetproperty.so
-#~ lib/libspeexresampler.so
-#~ lib64/hw/audio.primary.default.so
-#~ lib64/hw/audio.primary.goldfish.so
-#~ lib64/hw/audio.r_submix.default.so
-#~ lib64/hw/audio.tms.default.so
-#~ lib64/hw/audio.usb.default.so
+lib/libspeexresampler.so
+lib64/hw/audio.primary.default.so
+lib64/hw/audio.primary.goldfish.so
+lib64/hw/audio.r_submix.default.so
+lib64/hw/audio.tms.default.so
+lib64/hw/audio.usb.default.so
 lib64/hw/audio_policy.default.so
-#~ lib64/libaudiopolicyenginedefault.so
-#~ lib64/libaudiopolicymanager.so
-#~ lib64/libaudiopolicymanagerdefault.so
-#~ lib64/libedmnativehelper.so
-#~ lib64/libfloatingfeature.so
+lib64/libaudiopolicyenginedefault.so
+lib64/libaudiopolicymanager.so
+lib64/libaudiopolicymanagerdefault.so
+lib64/libedmnativehelper.so
+lib64/libfloatingfeature.so
 lib64/libhiddensound.so
 lib64/libjackshm.so
 lib64/libjansson.so
-#~ lib64/libmediautils.so
+lib64/libmediautils.so
 lib64/libsetproperty.so
-#~ lib64/libspeexresampler.so
+lib64/libspeexresampler.so
 vendor/lib/libjack.so
 vendor/lib64/libjack.so
 
