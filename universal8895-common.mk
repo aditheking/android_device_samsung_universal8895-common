@@ -37,7 +37,8 @@ PRODUCT_PACKAGES += \
     init.samsungexynos8895.usb.rc \
     init.usb.configfs.rc \
     init.wifi.rc \
-    ueventd.samsungexynos8895.rc
+    ueventd.samsungexynos8895.rc \
+    vold.rc
 
 # Permissions
 PRODUCT_COPY_FILES += \
