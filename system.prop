@@ -1,5 +1,33 @@
 # read DS/SS property
 import /efs/factory.prop
 
+# Display
+ro.opengles.version=196610
+
 # boot device
 ro.boot.bootdevice=11120000.ufs
+
+# Google assistant
+ro.opa.eligible_device=true
+
+# Tweaks
+# Better Responsiveness & Speed
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=8000
+
+#Disable Miscellaneous Android Logging Stuff
+debugtool.anrhistory=0
+profiler.debugmonitor=false
+profiler.launch=false
+profiler.hung.dumpdobugreport=false
+
+#Disable Kernel Error Checking
+ro.kernel.android.checkjni=0
+ro.kernel.checkjni=0
+
+#Better signal reception
+persist.cust.tel.eons=1
+
+# Increase jpg quality to 100%
+ro.media.enc.jpeg.quality=100
+

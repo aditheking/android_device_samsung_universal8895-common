@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter dream dreamlte dream2lte, $(TARGET_DEVICE)),)
+ifneq ($(filter exynos8895, $(TARGET_SOC)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
