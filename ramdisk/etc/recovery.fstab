@@ -1,7 +1,8 @@
 /boot		emmc	/dev/block/bootdevice/by-name/BOOT
 /recovery	emmc	/dev/block/bootdevice/by-name/RECOVERY	flags=backup=1
+/misc		emmc	/dev/block/bootdevice/by-name/OTA
 /system		ext4	/dev/block/bootdevice/by-name/SYSTEM
-/data		ext4	/dev/block/bootdevice/by-name/USERDATA	flags=encryptable=footer;length=-20480
+/data		ext4	/dev/block/bootdevice/by-name/USERDATA	flags=encryptable=footer
 /cache		ext4	/dev/block/bootdevice/by-name/CACHE
 /modem		emmc	/dev/block/bootdevice/by-name/RADIO	flags=backup=1;display="Baseband"
 /efs		ext4	/dev/block/bootdevice/by-name/EFS	flags=backup=1;display="EFS"

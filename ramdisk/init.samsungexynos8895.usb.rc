@@ -1,6 +1,5 @@
 on init
-    mount configfs system /sys/kernel/config
-    chmod -R 755 /sys/kernel/config/usb_gadget/g1
+    mount configfs none /sys/kernel/config
     mkdir /sys/kernel/config/usb_gadget/g1
     mkdir /sys/kernel/config/usb_gadget/g1/strings/0x409
     mkdir /sys/kernel/config/usb_gadget/g1/configs/c.1
